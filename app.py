@@ -37,4 +37,4 @@ def redirect_url(short_url):
 if __name__ == "__main__":
     with open("short_urls.json", "r") as file:
         shortned_url = json.load(file)
-    app.run(debug=True)
+    app.run(host="0.0.0.0",port= 80,debug=True)
