@@ -3,7 +3,7 @@ import random
 import string
 import json
 
-app = Flask(_name_)
+app = Flask(__name__)
 
 shortned_url = {}
 
