@@ -4,13 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>URL Shortener</title>
+    <style>
+        body{
+            background-color: bisque;
+        }
+        h1{
+            margin: auto;
+            width: 50%;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        form{
+
+            text-align:center;
+
+            width: 50%;
+            margin: auto;
+
+        }
+        form label{
+            font-size: xx-large;
+        }
+        input{
+            width: 80%;
+            padding: 10px;
+            font-size: large;
+        }
+        button{
+            padding: 10px;
+        }
+    </style>
 </head>
 <body>
     <h1>URL Shortener</h1>
     <form method="POST" action="{{ url_for('index') }}">
-        <label for="long_url" style="font: bold;">Enter something:</label> <br/>
+        <label for="long_url" style="font: bold;">Enter URL:</label> <br/>
         <input type="url" name="long_url" placeholder="Enter URL" required />
         <button type="submit">Shorten</button>
     </form>
+ 
 </body>
 </html>
